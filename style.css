@@ -110,7 +110,7 @@ p {
     opacity: 0.25;
 }
 
-.header{
+.head{
  display: flex;
  align-items: center;
  padding: 24px 193px 24px 12px;
@@ -414,6 +414,10 @@ font-weight: 700;
 line-height: 24px; /* 150% */
 }
 
+.card_pr:nth-child(2) > .price{
+margin-top: 45px;
+}
+
 .card_pr:nth-child(2) > .price > .price_text1{
     color: #1F2937;
     text-align: center;
@@ -429,4 +433,105 @@ line-height: 24px; /* 150% */
     font-size: 16px;
     font-weight: 700;
     line-height: 24px; /* 150% */
+}
+
+.pre_footer{
+    background: linear-gradient(90deg, #D53369 0%, #DAAE51 100%);
+    width: 100%;
+    height: 550px;
+}
+
+.img2{
+    width: 100%;
+}
+
+.call{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.text_call{
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px; /* 125% */
+    padding-top: 30px;
+    padding-bottom: 8px;
+}
+
+.hr_call{
+    border-radius: 4px 4px 0px 0px;
+    opacity: 0.25;
+    background: #FFF;
+    width: 256px;
+height: 4px;
+border: none;
+}
+
+.text_message{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37.5px; /* 125% */
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+.btn_call{
+    color: #1F2937;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    border-radius: 9999px;
+background: #FFF;
+box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);
+padding: 16px 32px;
+border: none;
+}
+
+.logo_footer{
+display: flex;
+gap: 8px;
+margin-right: 112px;
+}
+
+.footer_components{
+display: flex;
+padding: 24px 0px 48px 0px;
+align-items: flex-start;
+}
+
+.landing{
+    color: #DB2777;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px; /* 111.111% */
+}
+
+.lists{
+display: flex;
+}
+
+ul{
+list-style-type: none;
+padding-right: 225px;
+}
+
+li:nth-child(1){
+    color: #6B7280;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    text-transform: uppercase;
+    padding-bottom: 24px;
+}
+
+li{
+    color: #1F2937;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    padding-bottom: 8px;
 }

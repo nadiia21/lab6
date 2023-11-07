@@ -477,6 +477,7 @@ border: none;
     line-height: 37.5px; /* 125% */
     padding-top: 15px;
     padding-bottom: 40px;
+    text-align: center;
 }
 
 .btn_call{
@@ -519,7 +520,7 @@ list-style-type: none;
 padding-right: 225px;
 }
 
-li:nth-child(1){
+.ul1 > p, .ul2 > p, .ul3 > p, .ul4 > p{
     color: #6B7280;
     font-size: 16px;
     font-weight: 400;
@@ -534,4 +535,229 @@ li{
     font-weight: 400;
     line-height: 24px; /* 150% */
     padding-bottom: 8px;
+}
+
+.burger {
+    position: relative;
+    width: 24px;
+    height: 20px;
+    background: transparent;
+    cursor: pointer;
+    margin-right: 5px;
+    display: none;
+}
+
+.input_burger {
+    display: none;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #9D174D;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+  
+  .input_burger:checked  ~ .link_nav{
+    overflow: visible;
+    height: 290px;
+    padding-top: 30px;
+  }
+
+@media (max-width: 390.98px){
+    .burger {
+        display: block;
+    }
+
+    .input_burger:checked ~ .burger > span:nth-of-type(1){
+        transform: rotate(57deg);
+    }
+
+    .input_burger:checked ~ .burger > span:nth-of-type(3){
+        transform: rotate(-55deg);
+    }
+
+
+    .input_burger:checked ~ .burger > span:nth-of-type(2){
+        display: none;
+    }
+
+    .head{
+    flex-direction: column;
+    padding: 0px;
+    }
+
+    h1{
+    text-align: center;
+    }
+
+    .head_text2{
+    font-size: 22px;
+    }
+
+    .head_text{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    }
+    
+    .link_nav{
+    overflow: hidden;
+    position:fixed;
+    flex-direction: column;
+    transition: all 0.3s linear;
+    width: 100%;
+    top:50px;
+    z-index: 5;
+    backdrop-filter: blur(8px);
+    gap: 27px;
+    height: 0px;
+    }
+
+    .name_logo{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px; /* 133.333% */
+    }
+
+    .head_button{
+    margin-bottom: 45px;
+    }
+
+    .head_text1, .head_text2, h1{
+        text-align: center;
+    }
+
+    .map_1{
+    flex-direction: column;
+    padding: 0px;
+    margin-bottom: 65px;
+    }
+
+    .map_2{
+        flex-direction: column-reverse;
+        padding: 0px;
+        gap: 40px;
+    }
+
+    .logo{
+    padding-left: 16px;
+    }
+    .section_map{
+    padding: 58px 0px;
+    }
+
+    .card_grid{
+       display: flex;
+       flex-direction: column;  
+    }
+
+    .pricing_card{
+        flex-direction: column;
+    }
+
+    .card_pr{
+    width: 312px;
+    }
+
+    .card_pr:nth-child(2){
+        width: 312px;
+        z-index: 1;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .lists{
+     flex-direction: column;
+    }
+
+    ul{
+    display: flex;
+    gap: 10px;
+    padding-right: 0px;
+    }
+
+    .footer_components{
+    flex-direction: column;
+    gap: 24px;
+    }
+
+    li{
+    padding-bottom: 24px;
+    }
+
+    .ul1 > p, .ul2 > p, .ul3 > p, .ul4 > p{
+        padding-bottom: 8px;
+    }
+
+    .hero{
+    width: 100%;
+    }
+
+    .notebook{
+    max-width: 320px;
+    }
+
+    .map_img{
+    width: 285px;
+    }
+    .text_map{
+        max-width: 325px;
+        padding: 24px 24px 55px 20px;
+    }
+
+    .pre_footer{
+        height: 420px;
+    }
+
+    .landing{
+     font-size: 24px;
+     font-weight: 700;
+    }
+
+    .flex_btn{
+    align-items: center;
+    }
+
+    .text_call{
+    text-align: center;
+    }
+
+    .waves{
+    bottom: -5px;
+    }
+
+    .nav > .container{
+    padding: 0px;
+    margin: 0px;
+    }
+
+    .navbar{
+    padding: 8px 8px 8px 0px;
+    }
+
+    .link_logo{
+        font-size: 32px;
+    }
 }
